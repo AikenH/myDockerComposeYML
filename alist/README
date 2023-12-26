@@ -1,0 +1,10 @@
+## Description 简单描述部分额外内容
+
+- AlistInstallAndUpdate.sh [-u | -i] 用来初始化安装和更新Alist
+- AlistCustomHeader是自用的美化Alist界面的自定义头部代码，将其贴到【管理】->【设置】->【全局】->【自定义头部中即可。】
+
+如果希望主页有readme等信息，挂载的时候可以将本地挂载到根目录，然后只放一个readme文件，这样就会直接以markdown形式展示出来。
+
+> 需要注意的是，记得将对应readme的目录挂载到容器中，或者直接在已经挂载的目录中创建新的文件夹。
+
+## FI

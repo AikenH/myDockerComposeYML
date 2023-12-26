@@ -1,0 +1,11 @@
+ref:
+
+## Install
+https://p3terx.com/archives/docker-aria2-pro.html
+https://github.com/P3TERX/Aria2-Pro-Docker/blob/master/docker-compose.yml
+
+## Aira2 认证失败
+https://yiwangmeng.com/aria2-status-page-to-prompt-the-solution-of
+
+## Alist 连接
+aria2 地址可能需要局域网ip替换localhost

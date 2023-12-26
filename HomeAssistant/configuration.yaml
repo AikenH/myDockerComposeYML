@@ -1,0 +1,31 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+sensor:
+  - platform: systemmonitor
+    resources:
+      - type: memory_use_percent
+      - type: disk_use_percent
+      - type: processor_use
+      - type: last_boot
+      - type: processor_temperature
+      - type: memory_free
+
+# ----------------THIS PART IS FOR REVERSE PROXY
+# http:
+#  use_x_forwarded_for: true
+#  trusted_proxies:
+#    - 127.0.0.1
+#    - 192.168.11.1
+#    - ::1
+#  login_attempts_threshold: 10
+#  ip_ban_enabled: true

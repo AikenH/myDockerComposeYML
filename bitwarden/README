@@ -1,0 +1,17 @@
+## Description
+
+该Docker-Compose方案使用的是sqlite3作为其数据库来存储数据，在初始化的时候需要将docker-compose.yml中的
+
+```yaml
+SIGNUPS_ALLOWED: 'false'
+```
+
+改成
+
+```yaml
+SIGNUPS_ALLOWED: 'true'
+```
+
+初始化的注册完成后再将其改为false重新启动即可，也可直接执行脚本，脚本中使用sed替代了该修改过程。
+
+## Fi

@@ -1,0 +1,16 @@
+version: "3"
+services:
+  focalboard:
+    image: mattermost/focalboard:latest
+    container_name: focalboard
+    volumes:
+      - fbdata:/opt/focalboard/data
+      - ./config.json:/opt/focalboard/config.json
+    ports:
+      - 8000:8000
+    environment:
+      - VIRTUAL_HOST=focalboard.local
+      - VIRTUAL_PORT=8000
+      - VIRTUAL_PROTO=https
+volumes:
+  fbdata:

@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+ bitwarden:
+  image: vaultwarden/server:latest
+  container_name: bitwarden
+  restart: unless-stopped
+  volumes:
+    - ./bw-data:/data
+  ports:
+    - 29070:80
+    - 29072:3012
+  environment:
+    SIGNUPS_ALLOWED: 'false'
+    WEBSOCKET_ENABLED: 'true'

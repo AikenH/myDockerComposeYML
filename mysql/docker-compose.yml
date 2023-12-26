@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: "your_root_password"
+      MYSQL_USER: 'extra_user'
+      MYSQL_PASS: "passwd_for_extra_user"
+    restart: unless-stopped
+    volumes:
+      - ./data:/var/lib/mysql
+      - ./config/my.cnf:/etc/my.cnf
+      - ./init:/docker-entrypoint-initdb.d/
+    ports:
+      - '29006:3306'

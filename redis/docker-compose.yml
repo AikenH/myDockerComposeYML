@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  redis:
+    image: redis:6.2.5
+    container_name: docker_redis
+    privileged: true
+    volumes:
+      - ./data:/data
+      - ./conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./logs:/logs
+    command: ["redis-server","/usr/local/etc/redis/redis.conf"]
+    ports:
+      - 29005:6379
+    environment:
+      - TZ="Asia/Shanghai"

@@ -2,7 +2,7 @@
 
 > this repo save my docker-compose-config file, mainly deploy on raspberrypi(4b).
 
-Now contain:
+I only save those App which is useful for me. Now contain:
 
 - alist
 - arias2(NG ui)
@@ -17,5 +17,9 @@ Now contain:
 - wikijs
 - homeassistant
 - homebox
+- kavita
+- bitwarden
+- focalboard
+- linkstack
 
-I only save those App which is useful for me.
+thx to [awesome-selfhosted](https://awesome-selfhosted.net/) [github page](https://github.com/awesome-selfhosted/awesome-selfhosted) u may find all the services you want there.
